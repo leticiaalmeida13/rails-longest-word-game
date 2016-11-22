@@ -1,0 +1,12 @@
+<h1>Longest word game</h1>
+
+<form action="/score" method="post">
+  <ul class="list-inline">
+    <% @grid.each do |letter| %>
+        <li> <%= letter %></li>
+    <% end %>
+  </ul>
+  <label for="word">Whats your word</label>
+  <input type="text" id="word" name="guess" placeholder="the longest word is...">
+  <input type="submit" value="Go on!">
+</form>
